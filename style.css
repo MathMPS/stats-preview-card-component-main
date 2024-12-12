@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Very-dark-blue: hsl(233, 47%, 7%);
+--Dark-desaturated-blue: hsl(244, 38%, 16%);
+--Soft-violet: hsl(277, 64%, 61%);
+--White: hsl(0, 0%, 100%);
+--Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+--Slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    background-color: var(--Very-dark-blue);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: var(--Dark-desaturated-blue);
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1110px;
+    border-radius: .5rem;
+    margin: 3rem;
+    overflow: hidden; 
+}
+
+.info-section{
+    padding: 4rem 4rem 4rem 4rem;
+    
+}
+
+img{
+    height: 100%;
+}
+
+.main-img{
+    position: relative;
+}
+
+.main-img::after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--Soft-violet);
+    opacity: .5;
+    content: '';
+    left: 0;
+    top: 0;
+
+}
+
+
+h1{
+    color: var(--White);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    letter-spacing: .1rem;
+    
+}
+
+.info-section span{
+    color: var(--Soft-violet);
+}
+
+.info-top p{
+    color: var(--Slightly-transparent-white);
+    margin-bottom: 5rem;
+    line-height: 1.5rem;
+    margin-right: 5rem;
+
+}
+
+#information{
+    display: flex;
+    text-align: start;
+    color: var(--White);
+}
+
+.info {
+    padding-right: 1.2rem;
+}
+
+.info h2{
+    padding-bottom: .5rem;
+    font-weight: 700;
+}
+
+.info p{
+    color: var(--Slightly-transparent-white-two);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: .8rem;
+    margin-right: 2.5rem;
+}
+
+@media screen and (max-width: 540px){
+.card {
+    max-height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem;
+    }
+#information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info{
+    padding: 0px;
+    margin-bottom: 3rem;
+}
+
+.info p {
+    margin-right: 0px;
+}
+
+.info-top p{
+    margin-right: 0px;
+    line-height: 2rem;
+}
+}
